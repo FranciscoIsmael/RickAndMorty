@@ -1,6 +1,8 @@
 package com.example.rickandmorty.Models
 
+import com.google.gson.annotations.SerializedName
+
 data class Location(
-    var name: String? = null,
-    var url: String? = null
+    @SerializedName("name") var name: String? = null,
+    @SerializedName("url") var url: String? = null
 )
