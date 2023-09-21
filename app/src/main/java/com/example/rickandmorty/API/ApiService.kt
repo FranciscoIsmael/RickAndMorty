@@ -10,4 +10,7 @@ interface ApiService {
     @GET
     suspend fun getCharacterList(@Url url: String): Response<CharacterListModel>
 
+    @GET
+    suspend fun filterCharacter(@Url url: String): Response<CharacterListModel>
+
 }
